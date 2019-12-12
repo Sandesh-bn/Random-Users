@@ -32,8 +32,8 @@ $(function(){
         }
 	}
 
-	let sortByAscending = data => data.sort((a, b) => parseFloat(a.dob.age) - parseFloat(b.dob.age));
-	let sortByDescending = data => data.sort((a, b) => parseFloat(b.dob.age) - parseFloat(a.dob.age));
+	let sortByAscending = data => data.sort((a, b) => parseFloat(b.dob.age) - parseFloat(a.dob.age));
+	let sortByDescending = data => data.sort((a, b) => parseFloat(a.dob.age) - parseFloat(b.dob.age));
 
 	function insertInTable(result){
 		$('tbody').children().remove();
